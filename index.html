@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="index.js"></script>
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(209, 19, 82);">
+    <div class="header">
+        <hr color="blue">
+        <h1>Slot Machine Project</h1>
+        <hr color="blue">
+    </div>
+    <div class="slotmachine">
+        <div class="slot" id="slot1">
+            <div class="emojis" id="emoji1">😘</div>
+        </div>
+        <div class="slot" id="slot2">
+            <div class="emojis" id="emoji2">😷</div>
+        </div>
+        <div class="slot" id="slot3">
+            <div class="emojis" id="emoji3">🤒</div>
+        </div>
+        
+    </div>
+    <div class="controls">
+        <input type="text" name="name" id="name" placeholder="Enter your name!" required="true"> <br>
+        <div id="errormsg"><p>Enter Your Name <br><br> </p></div><br>
+        <input type="button" value="Start" class="button" id="StartButton" onclick="startAnimation()">
+        <input type="text" id="controller">
+        <input type="range" min = "1" max ="10" value="10" id = "slidercontrol" class = "slider">
+        <input type="button" value="Stop" class="button" id="StopButton" onclick="stopAnimation()"><br>
+        <input type="button" value="Reset" class="button" onClick="document.location.reload(true)"><br><br>
+        <div id="resultmsg"><p>Result Message</p></div>    
+    </div>
+</body>
+</html>
