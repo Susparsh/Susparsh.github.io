@@ -3,10 +3,14 @@ var ctr = 0;
 
 function scrolling() {
         let ele = document.getElementsByTagName('nav');
-        if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80)
+        if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
         ele[0].style.background = "rgb(5, 100, 87)";
-        else
+        ele[0].style.opacity = "0.8";
+        }
+        else{
         ele[0].style.background = "rgb(3, 24, 63)";
+        ele[0].style.opacity = "1";
+        }
 }
 
 function changeActiveClass(tobeActive) {
