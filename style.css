@@ -217,6 +217,28 @@ h3{
     }
 }
 
+@media screen and (max-width: 450px){
+
+    #projectsec{
+        height: 260vh;
+    }
+    .projects{
+        margin-top: 7%;
+        width: 90%;
+        height: 75vh;
+    }
+    .projects img{
+        border-radius: 5%;
+        width: 85%;
+    }
+    h3{
+        color: white;
+        background-color: rgb(14, 9, 1);
+        font-size: 25px;
+    }
+
+}
+
 #techsec{
     margin-left: 10%;
     border-radius: 100%;
@@ -256,6 +278,7 @@ h3{
         margin-top: 8%;
     }
 }
+
 #interactsec{
     width: 100%;
     height: 100vh;
