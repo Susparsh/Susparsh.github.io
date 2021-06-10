@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>Creating NavBar</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check" onchange="chkbtn()">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <label class="logo">Portfolio</label>
+        <ul id="navlist">
+            <li><a href="#about" class="active" id="activeProfile" onclick="changeActiveClass('activeProfile')">Profile</a></li>
+            <li><a href="#projectsec" class="notactive" id="activeProjects" onclick="changeActiveClass('activeProjects')">Projects</a></li>
+            <li><a href="#techsec" class="notactive" id="activeTech" onclick="changeActiveClass('activeTech')">Tech & Tools</a></li>
+            <li><a href="#certificates" class="notactive" id="activeCerts" onclick="changeActiveClass('activeCerts')">Certifications</a></li>
+            <li><a href="#interactsec" class="notactive" id="activeinteract" onclick="changeActiveClass('activeinteract')">interact</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div id="about">
+            <div id="dp">
+             <img src="dp.jpg" alt="">
+            </div>
+            <div id="intro">
+                <h1>Hi! I am Susparsh Banerjee.</h1><br><br>
+                <p>↪ A dedicated Coder and a Learner forever<br>↪ MCA 20219-2022 Batch | IET Lucknow <br> ↪ Bit of creative bytes : A Writer </p>
+            </div>
+        </div>
+
+        <div id="projectsec">
+            <h2>Projects</h2>
+            <div id="project1" class="projects">
+                <h3>Current Portfolio</h3>
+                <img src="PortfolioSnapMobile.png" alt="">
+                <p class="projectinfo1">A responsive portfolio website hosted on Github.</p><br>
+                <p class="projectinfo2">HTML|CSS|JS</p>
+            </div>
+            <div id="project2" class="projects">
+                <h3>Slot Machine Game</h3>
+                <img src="SlotMachineSnapMobile.png" alt="">
+                <p class="projectinfo1"> An interactive slot machine game with buttons and sliders.</p><br>
+                <p class="projectinfo2">HTML|CSS|JS</p>
+            </div>
+            <div id="project3" class="projects">
+                <h3>E Voting System</h3>
+                <img src="PortfolioSnapMobile.png" alt="">
+                <p class="projectinfo1">A standalone application for a small organisation level connected to a database.</p><br>
+                <p class="projectinfo2">Java|MySQL</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="techsec">
+            <h2>Tech and Tools</h2>
+            <div id="tech">
+                <div class="techcards">
+                    <p class="techheading">Basic Languages</p><br>
+                    <p class="techinfo"> C, C++(Basic), Java(Core)</p>
+                </div>
+                <div class="techcards">
+                    <p class="techheading">Web Dev</p><br>
+                    <p class="techinfo"> HTML5, CSS3, Javascript</p>
+                </div>
+                <div class="techcards">
+                    <p class="techheading">Database and Tools</p><br>
+                    <p class="techinfo">MySQL, Xampp Server</p>
+                </div>
+                <div class="techcards">
+                    <p class="techheading">Cloud</p><br>
+                    <p class="techinfo">AWS(Beginner)</p>
+                </div>
+                <div class="techcards">
+                    <p class="techheading">Editors and Applications</p><br>
+                    <p class="techinfo"> VSCode, Sublime Text, NetBeans, Eclipse</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="interactsec">
+            <h2 style="background: white">Interact Here</h2>
+            <div id = "interactcard">
+                <blockquote>
+                    <span>
+                    "The best ideas start as conversations"
+                    </span>
+                </blockquote>
+                <p style="color: rgb(6, 8, 6); font-size: 30px;"> - Jonathan Ive</p><br><br>
+                <a href=""><i class="fa fa-linkedin-square"></i></a>
+                <a href=""><i class="fa fa-github"></i></a>
+                <a href=""><i class="fa fa-envelope"></i></a><br><br><br>
+                <p style="font-size: 30px; font-family: cursive; color: black">Feel free to contact me!</p>
+            </div>git
+        </div>
+    </section>
+
+    <footer>
+        <h4>Self-Made PORTFOLIO. <br> Copyrights© Reserved.</h4>
+    </footer>
+</body>
+</html>
