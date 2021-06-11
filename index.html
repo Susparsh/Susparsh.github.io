@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="script.js"></script>
-    <title>Creating NavBar</title>
+    <title>Susparsh Banerjee</title>
 </head>
 <body>
     <nav>
@@ -15,14 +15,20 @@
         <label for="check" class="checkbtn">
             <i class="fa fa-bars"></i>
         </label>
-        <label class="logo">Portfolio</label>
-        <ul id="navlist">
+        <input type="checkbox" id="cross">
+        <label class="logo">↗Portfolio</label>
+        <ul id="navlist">            
             <li><a href="#about" class="active" id="activeProfile" onclick="changeActiveClass('activeProfile')">Profile</a></li>
             <li><a href="#projectsec" class="notactive" id="activeProjects" onclick="changeActiveClass('activeProjects')">Projects</a></li>
             <li><a href="#techsec" class="notactive" id="activeTech" onclick="changeActiveClass('activeTech')">Tech & Tools</a></li>
             <li><a href="#certificates" class="notactive" id="activeCerts" onclick="changeActiveClass('activeCerts')">Certifications</a></li>
             <li><a href="#interactsec" class="notactive" id="activeinteract" onclick="changeActiveClass('activeinteract')">interact</a></li>
+            <label for="cross" class="crossbtn" onclick="crossbtn()">
+                <i class="fa fa-times-circle"></i>
+            </label>
+            
         </ul>
+        
     </nav>
 
     <section>
@@ -88,6 +94,17 @@
     </section>
 
     <section>
+        <div id="cerificates">
+            <h2> Trainings and Cerifications</h2>
+            <div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section>
         <div id="interactsec">
             <h2 style="background: white">Interact Here</h2>
             <div id = "interactcard">
@@ -97,9 +114,9 @@
                     </span>
                 </blockquote>
                 <p style="color: rgb(6, 8, 6); font-size: 30px;"> - Jonathan Ive</p><br><br>
-                <a href=""><i class="fa fa-linkedin-square"></i></a>
-                <a href=""><i class="fa fa-github"></i></a>
-                <a href=""><i class="fa fa-envelope"></i></a><br><br><br>
+                <a href="https://www.linkedin.com/in/susparsh/"><i class="fa fa-linkedin-square"></i></a>
+                <a href="https://github.com/Susparsh"><i class="fa fa-github"></i></a>
+                <a href="mailto: susparshbanerjee1098@gmail.com?subject = Feedback&body = Message"><i class="fa fa-envelope"></i></a><br><br><br>
                 <p style="font-size: 30px; font-family: cursive; color: black">Feel free to contact me!</p>
             </div>git
         </div>

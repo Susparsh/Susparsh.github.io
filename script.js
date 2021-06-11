@@ -41,9 +41,10 @@ function chkbtn() {
                 console.log(screen.width)
                 navbar.style.left = "0";
         }
-//         console.log("Ckbtn")
-//         console.log(chk.checked);
-//        if(!chk.checked && ctr != 0){
-//         navbar.style.left = "0"
-//         chk.checked = 'true';
+ }
+
+ function crossbtn() {
+        let navbar = document.getElementById('navlist');
+        console.log(screen.width)
+        navbar.style.left = "-100%";
  }

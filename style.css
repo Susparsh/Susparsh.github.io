@@ -6,8 +6,8 @@
     list-style: none;
 }
 body{
-    font-family: 🇲🇸;
-    background-color: rgba(156, 177, 166, 0.747);
+    font-family :  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #266150;
 }
 
 nav{
@@ -49,7 +49,7 @@ a.active,a:hover{
 a.notactive{
     background-color: transparent;
 }
-.checkbtn{
+.checkbtn, .crossbtn{
     font-size: 30px;
     color: white;
     float: right;
@@ -58,7 +58,7 @@ a.notactive{
     cursor: pointer;
     display: none;
 }
-#check{
+#check, #cross{
     display: none;
 }
 @media(max-width: 952px){
@@ -70,21 +70,21 @@ a.notactive{
         font-size: 13px;
     }
 }
-@media(max-width: 858px){
-    .checkbtn{
+@media(max-width: 872px){
+    .checkbtn, .crossbtn{
         display: block;
+    }
+    .crossbtn{
+        float: none;
     }
     ul{
         position: fixed;
-        width: 60%;
+        width: 100%;
         height: 100vh;
         background: rgb(1, 1, 19);
         top: 80px;
         left: -100%;
         text-align: center;
-    }
-    #interactsec h2{
-        font-size: 28px;
     }
     nav ul li{
         display: block;
@@ -104,11 +104,14 @@ a.notactive{
     #check:checked ~ ul{
         left: 0;
     }
+    .crossbtn{
+        margin-right: 10px;
+    }
 }
 #about{
     margin-top: 80px;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     background-color: rgb(3, 24, 63);
 }
 #dp{
@@ -140,7 +143,6 @@ a.notactive{
     #dp{
         width: 100%;
         height: 50vh;
-        margin-top: 10%;
     }
     #dp img{
         width: 275px;
@@ -155,7 +157,6 @@ a.notactive{
  }
 
 #projectsec{
-    padding-top: 8%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     width: 100%;
@@ -164,14 +165,13 @@ a.notactive{
 }
 h2{
     color: rgb(3, 24, 63);
-    font-family: MS;
+    font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     font-size: 35pt;
 }
 .projects{
     margin: 1%;
     margin-top: 2%;
-    padding: 2%;
     display: inline-block;
     width: 30%;
     height: 65vh;
@@ -207,7 +207,6 @@ h3{
         height: 300vh;
     }
     .projects{
-        margin-top: 7%;
         width: 70%;
         height: 80vh;
     }
@@ -231,10 +230,10 @@ h3{
         width: 85%;
     }
     h3{
+        padding-top: 0px;
         color: white;
         background-color: rgb(3, 24, 63);
         font-size: 25px;
-        margin-top: 10%;
     }
 
 }
@@ -245,22 +244,22 @@ h3{
     padding-top: 7%;
     width: 80%;
     height: 100vh;
-    background-color: white;
     text-align: center;
+    background-color: white;
 }
 .techcards{
     border-radius: 50%;
     margin: 2%;
     margin-top: 5%;
     display: inline-block;
-    background-color: rgb(5, 100, 87);
+    background-color: rgb(202, 143, 15);
     width: 300px;
     height: 120px;
 }
 
 .techheading{
     font-size: 25px;
-    background-color: rgb(3, 24, 63);
+    background-color: rgb(218, 236, 57);
     color: white;
 }
 .techinfo{
