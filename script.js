@@ -4,7 +4,7 @@ var ctr = 0;
 function scrolling() {
         let ele = document.getElementsByTagName('nav');
         if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
-        ele[0].style.background = "rgb(5, 100, 87)";
+        ele[0].style.background = "#FFD662F";
         ele[0].style.opacity = "0.8";
         }
         else{
