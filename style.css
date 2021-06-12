@@ -230,6 +230,9 @@ h3{
         width: 70%;
         height: 350px;
     }
+    #certificates h2{
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -309,6 +312,7 @@ h3{
 }
 
 #certificates{
+    width: 100%;
     margin-top: 7%;
     text-align: center;
 }
