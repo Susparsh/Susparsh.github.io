@@ -57,6 +57,7 @@ a.notactive{
     cursor: pointer;
     display: none;
 }
+
 #check, #cross{
     display: none;
 }
@@ -138,6 +139,7 @@ a.notactive{
     color: white;
 }
 
+
  @media screen and (max-width: 952px){
     #dp{
         width: 100%;
@@ -176,18 +178,27 @@ h2{
     padding-top: 0;
     display: inline-block;
     width: 30%;
-    height: 75vh;
+    height: 80vh;
     background-color: white;
     font-family: monospace;
     color: rgb(1, 2, 17);
     overflow: hidden;
     border: 1px solid rgba(5, 148, 153, 0.911);
+    box-shadow: 5px 5px;
 }
 .projects h3{
     line-height: 60px;
 }
 .certcards h3{
     line-height: 60px;
+}
+.projects:hover{
+    box-shadow: 0 0;
+    margin-top: -3px;
+}
+.certcards:hover{
+    box-shadow: 0 0;
+    margin-top: -3px;
 }
 h3{
     font-size: 30px;
@@ -235,7 +246,9 @@ h3{
 }
 
 @media screen and (max-width: 450px){
-
+    label.logo{
+        font-size: 27px;
+    }
     #projectsec{
         height: 280vh;
     }
@@ -275,12 +288,14 @@ h3{
     background-color: rgb(202, 143, 15);
     width: 250px;
     height: 100px;
+
 }
 
 .techheading{
     font-size: 22px;
     background-color: rgb(218, 236, 57);
     color: rgb(10, 2, 29);
+    box-shadow: 3px 3px rgb(51, 3, 3);
 }
 .techinfo{
     font-size: 15px;
@@ -335,6 +350,40 @@ h3{
     height: 70%;
 }
 
+.subcerts{
+    text-align: left;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 5%;
+    background-color: rgb(133, 179, 192);
+}
+.subcertsheading{
+    margin-top: 7%;
+    color:rgb(4, 1, 15) ;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.subcerts h5{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(1, 7, 2);
+    font-size: 13px;
+}
+
+summary{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(1, 7, 2);
+    font-size: 13px;
+    font-weight: bolder;
+}
+.subcerts p{
+    background-color: rgb(232, 237, 241);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(49, 68, 5);
+    font-size: 8px;
+}
+.extendedline{
+    font-size: 10px;
+}
 .cp{
     border-radius: 18%;
     border: 1px solid white;
@@ -349,6 +398,7 @@ h3{
 }
 .cp:hover{
     margin-top: -1%;
+    margin-bottom: 6%;
     transition: ease-in-out opacity 0.3s;
     box-shadow: 3px 5px;
 }
@@ -478,17 +528,6 @@ h3{
         opacity: 0.5;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 #interactsec{
     width: 100%;
     height: 100vh;
@@ -502,6 +541,7 @@ h3{
 
 #interactsec h2{
     margin-top: 0px;
+    box-shadow: 10px 7px;
     background-color: rgb(3, 24, 63);
 }
 
@@ -537,9 +577,45 @@ blockquote{
     }
 }
 
+
+
+@media(max-width: 1050px){
+nav ul li a{
+    font-size: 9px;
+    }
+}
+@media(max-width: 872px){
+    nav ul li a{
+    font-size: 18px;
+    }
+}   
+
+#downloadbutton{
+    width: 50px;
+    font-size: 15px;
+    border-radius: 4%;
+    border: 1px solid white;
+    padding: 2%;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(3, 24, 63);
+}
+#resumesection{
+    margin-top: -1%;
+    padding-top: 4%;
+    height: 20vh;
+    width: 100%;
+    background-color: white ;
+    text-align: center;
+}
+.crossbtn{
+    font-size: 25px;
+    line-height: 5px;
+    margin-top: 0px;
+}
+
 footer{
     color: white;
-    margin-top: 5%;
     border-top: 1px dashed white;
     padding-top: 5%;
     text-align: center;
@@ -548,3 +624,4 @@ footer{
     width: 100%;
     height: 20vh;
 }
+

@@ -16,13 +16,14 @@
             <i class="fa fa-bars"></i>
         </label>
         <input type="checkbox" id="cross">
-        <label class="logo">↗Portfolio</label>
+        <label class="logo"> &#x1F4DA;Portfolio</label>
         <ul id="navlist">            
             <li><a href="#about" class="active" id="activeProfile" onclick="changeActiveClass('activeProfile')">Profile</a></li>
             <li><a href="#projectsec" class="notactive" id="activeProjects" onclick="changeActiveClass('activeProjects')">Projects</a></li>
             <li><a href="#techsec" class="notactive" id="activeTech" onclick="changeActiveClass('activeTech')">Tech & Tools</a></li>
             <li><a href="#certificates" class="notactive" id="activeCerts" onclick="changeActiveClass('activeCerts')">Certifications + CP</a></li>
-            <li><a href="#interactsec" class="notactive" id="activeinteract" onclick="changeActiveClass('activeinteract')">interact</a></li>
+            <li><a href="#interactsec" class="notactive" id="activeinteract" onclick="changeActiveClass('activeinteract')">Interact</a></li>
+            <li><a href="#resumesection" class="notactive" id="activeinteract" onclick="changeActiveClass('activeinteract')">Resume</a></li>
             <label for="cross" class="crossbtn" onclick="crossbtn()">
                 <i class="fa fa-times-circle"></i>
             </label>
@@ -49,17 +50,17 @@
                 <p class="projectinfo1">A responsive portfolio website hosted on Github.</p><br>
                 <p class="projectinfo2">HTML|CSS|JS</p>
             </div>
+            <div id="project3" class="projects">
+                <h3>E Voting System</h3>
+                <img src="evoting.jpg" alt="">
+                <p class="projectinfo1">A standalone application - small organisation level, connected to a database.</p><br>
+                <p class="projectinfo2">Java|MySQL</p>
+            </div>
             <div id="project2" class="projects">
                 <h3>Slot Machine Game</h3>
                 <img src="SlotMachineSnapMobile.png" alt="">
                 <p class="projectinfo1"> An interactive slot machine game with buttons and sliders.</p><br>
                 <p class="projectinfo2">HTML|CSS|JS</p>
-            </div>
-            <div id="project3" class="projects">
-                <h3>E Voting System</h3>
-                <img src="PortfolioSnapMobile.png" alt="">
-                <p class="projectinfo1">A standalone application for a small organisation level connected to a database.</p><br>
-                <p class="projectinfo2">Java|MySQL</p>
             </div>
         </div>
     </section>
@@ -70,7 +71,7 @@
             <div id="tech">
                 <div class="techcards">
                     <p class="techheading">Basic Languages</p><br>
-                    <p class="techinfo"> C, C++(Basic), Java(Core)</p>
+                    <p class="techinfo"> C, C++, <br> Java(Core), Python</p>
                 </div>
                 <div class="techcards">
                     <p class="techheading">Web Dev</p><br>
@@ -86,7 +87,7 @@
                 </div>
                 <div class="techcards">
                     <p class="techheading">Editors and Applications</p><br>
-                    <p class="techinfo"> VSCode, Sublime Text, NetBeans, Eclipse</p>
+                    <p class="techinfo"> VSCode, Sublime Text, <br> NetBeans, Eclipse</p>
                 </div>
             </div>
         </div>
@@ -100,53 +101,31 @@
                     <h3> Certificates/Training</h3>
                 </div>
                 <div class="certcardsbody">
-                    <ol>
-                        <li class="certlisthead">Trainings</li>
-                        <li>
-                            <ol type="1">
-                                <li>Summer Training on Java</li>
-                                <li>Organisation : Axpino Technologies, Kanpur</li>
-                                <li>Date : June 2019 - July 2019</li>
-                            </ol>
-                            <ol type="1">
-                                <li>Cloud Computing with AWS</li>
-                                <li>Organisation : Softpro, Lucknow (Online)</li>
-                                <li>Date : Nov 2020 - Jan 2021</li>
-                            </ol>
-                        </li>
-                    
-                        <li class="certlisthead">Certificates</li>
-                    
-                            <ol type="1">
-                                <li>Java(Basic)</li>
-                                <li>Organisation : HackerRank</li>
-                            </ol>
-                            <ol type="1">
-                                <li>Introduction to HTML5</li>
-                                <li>Organisation : Coursera</li>
-                            </ol>
-                            <ol type="1">
-                                <li>Introduction to CSS3</li>
-                                <li>Organisation : Coursera</li>
-                            <ol>
-                            <ol type="1">
-                                <li>AWS Fundamentals</li>
-                                <li>Organisation : Coursera</li>
-                            </ol>
-                            <ol type="1">
-                                <li>Introfuction to Relationsal Database and SQL</li>
-                                <li>Organisation : Coursera</li>
-                            </ol>
-                            <ol type="1">
-                                <li>Python Data Structures</li>
-                                <li>Organisation : Coursera</li>
-                            </ol>
-                            <ol type="1">
-                                <li>Python for Everybody</li>
-                                <li>Organisation : Coursera</li>
-                            </ol>
-                    </ol>
-                    
+                    <h4 class="subcertsheading">Trainings</h4>
+                    <div class="subcerts">
+                            <details>
+                                <summary>Summer Training on Java</summary>
+                                <p> &nbsp &nbsp &nbsp &nbsp Organisation : Axpino Technologies, Kanpur <br>
+                                    &nbsp &nbsp &nbsp &nbsp Date : June 2019 - July 2019</p>
+                            </details>
+                            
+                            <details>
+                            <summary> Cloud Computing with AWS</summary> 
+                            <p> &nbsp &nbsp &nbsp &nbsp Organisation : Softpro, Lucknow (Online) <br>
+                                &nbsp &nbsp &nbsp &nbsp Date : Nov 2020 - Jan 2021</p>
+                            </details>
+                    </div>
+                     
+                    <h4 class="subcertsheading">Certificates</h4>
+                    <div class="subcerts">
+                        <h5>&#x2B50; Java(Basic) : HackerRank <br>
+                            &#x2B50; Python Data Structures : Coursera<br>
+                            &#x2B50; Python for Everybody : Coursera <br>
+                            &#x2B50; Introduction to HTML5 : Coursera<br>
+                            &#x2B50; Introduction to CSS3 : Coursera<br>
+                            &#x2B50;<span  class="extendedline" > Introduction to Relational Database and SQL : Coursera</span><br>
+                            &#x2B50; AWS Fundamentals : Coursera</h5>
+                    </div>
                 </div>
             </div>
             <div class="certcards">
@@ -162,11 +141,11 @@
                    <div class="cp" id="cp2">
                         <img src="hackerranklogo.png" alt="logo">
                         <p> Java : &#x2B50&#x2B50&#x2B50&#x2B50&#x2B50 <br> Problem Solving : &#x2B50&#x2B50&#x2B50 </p>
-                        <a href="https://www.codechef.com/users/susparsh10"><button class="visitprofile">Visit Pofile</button></a>
+                        <a href="https://www.hackerrank.com/susparsh"><button class="visitprofile">Visit Pofile</button></a>
                     </div>
                    <div class="cp" id="cp3">
                         <img src="interviewbit.png" alt="logo"><br><br>
-                        <a href="https://www.codechef.com/users/susparsh10"><button class="visitprofile">Visit Pofile</button></a>
+                        <a href="https://www.interviewbit.com/profile/susparsh-banerjee"><button class="visitprofile">Visit Pofile</button></a>
                    </div> 
                 </div>
             </div>
@@ -190,6 +169,10 @@
                 <p style="font-size: 30px; font-family: cursive; color: black">Feel free to get in touch!</p>
             </div>
         </div>
+    </section>
+
+    <section id="resumesection">
+        <a href="dp.jpg" download="Susparsh Banerjee" id="downloadbutton"> <i class="fa fa-download"></i> Download Resume</a>
     </section>
 
     <footer>
