@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;
 }
 body{
     font-family :  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -177,7 +176,7 @@ h2{
     padding-top: 0;
     display: inline-block;
     width: 30%;
-    height: 65vh;
+    height: 75vh;
     background-color: white;
     font-family: monospace;
     color: rgb(1, 2, 17);
@@ -274,16 +273,17 @@ h3{
     margin-top: 5%;
     display: inline-block;
     background-color: rgb(202, 143, 15);
-    width: 300px;
-    height: 120px;
+    width: 250px;
+    height: 100px;
 }
 
 .techheading{
-    font-size: 25px;
+    font-size: 22px;
     background-color: rgb(218, 236, 57);
     color: rgb(10, 2, 29);
 }
 .techinfo{
+    font-size: 15px;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -329,17 +329,155 @@ h3{
     line-height: 50px;
 }
 .certcardsbody{
+    padding-top: 1%;
+    text-align: center;
     margin: 5%;
-    text-align: left;
     height: 70%;
 }
 
+.cp{
+    border-radius: 18%;
+    border: 1px solid white;
+    margin-bottom: 5%;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 35%;
+    background-color: rgb(37, 196, 188);
+    opacity: 0.8;
+    box-shadow: 0px 0px;
+}
+.cp:hover{
+    margin-top: -1%;
+    transition: ease-in-out opacity 0.3s;
+    box-shadow: 3px 5px;
+}
+
+#cp2 p
+{
+    font-weight: bolder;
+    font-size: 10pt;
+    font-family: 🇲🇸;
+    color: rgb(232, 240, 243);
+}
+
+#cp1 p{
+    font-weight: bolder;
+    font-size: 12pt;
+}
+#cp1 img{
+    width: 28%;
+    height: 30%;
+}
+#cp2 img{
+    width: 28%;
+    height: 30%;
+}
+#cp3 img{
+    width: 28%;
+    height: 35%;
+}
+#cp1{
+    background-color: rgb(94, 32, 3);
+    color: white;
+}
+#cp2{
+    background-color: rgb(9, 133, 50);
+    color: white;
+}
+#cp3{
+    background-color: rgb(217, 218, 165);
+    color: white;
+}
 
 
+.visitprofile{
+    margin-top: 5%;
+    border: 1px solid white;
+    padding: 2%;
+    font-size: 10px;
+    color: white;
+    border-radius: 20%;
+    background-color: rgb(16, 78, 194);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#cp2 button{
+    margin-top: 1%;
+}
+
+#cp2 button:hover{
+    margin-top: 0%;
+    transition: ease-in-out opacity 0.4s;
+    opacity: 0.5;
+}
+
+.visitprofile:hover{
+    margin-top: 4%;
+    transition: ease-in-out opacity 0.4s;
+    opacity: 0.5;
+}
 
 
-
-
+@media screen and (max-width: 952px){
+    #cp1 img{
+        width: 35%;
+        height: 35%;
+    }
+    #cp2 img{
+        width:35% ;
+    }
+    #cp3 img{
+        margin-top: 2%;
+    }
+    #cp1 p{
+        font-size: 20pt;
+    }
+    #cp2 p{
+    font-size: 12pt ;
+    }
+    .cp button{
+        font-size: 15pt;
+    }
+    #cp2 button{
+        margin-top: 5%;
+    }
+    #cp2 button:hover{
+        margin-top: 4%;
+        transition: ease-in-out opacity 0.4s;
+        opacity: 0.5;
+    }
+}
+@media screen and (max-width: 450px){
+    #cp1 img{
+        width: 35%;
+        height: 35%;
+    }
+    #cp2 img{
+        width:35% ;
+    }
+    #cp3 img{
+        margin-top: 2%;
+    }
+    #cp1 p{
+        font-size: 15pt;
+    }
+    #cp2 p{
+    font-size: 10pt ;
+    }
+    .cp button{
+        margin-top: 2%;
+        font-size: 12pt;
+    }
+    #cp2 button{
+        margin-top: 2%;
+    }
+    #cp2 button:hover{
+        margin-top: 4%;
+        transition: ease-in-out opacity 0.4s;
+        opacity: 0.5;
+    }
+}
 
 
 
