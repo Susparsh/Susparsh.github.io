@@ -70,6 +70,12 @@ a.notactive{
         font-size: 13px;
     }
 }
+.projects:hover{
+    box-shadow: 0 0;
+}
+.certcards:hover{
+    box-shadow: 0 0;
+}
 @media(max-width: 872px){
     .checkbtn, .crossbtn{
         display: block;
